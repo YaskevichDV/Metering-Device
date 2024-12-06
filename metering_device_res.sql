@@ -20,7 +20,7 @@ comment on column metering_device.id                      is 'ID прибора учета';
 comment on column metering_device.serial_num              is 'серийный номер'; 
 comment on column metering_device.metering_device_type_id is 'ID типа прибора учета (spr_metering_device_type)'; 
 comment on column metering_device.ind_default             is 'показание по умолчанию (на момент установки счетчика)';
-comment on column metering_device.placement_id            is 'ID места размещени€'; 
+comment on column metering_device.placement_id            is 'ID места размещени€ (spr_metering_device_placement)'; 
 comment on column metering_device.flag_top                is 'ѕризнак актуальности'; 
 comment on column metering_device.created_dt              is 'ƒата первого использовани€ прибора'; 
 comment on column metering_device.updated_dt              is 'ƒата изменени€ прибора'; 
@@ -70,7 +70,7 @@ ind_date                date not null
 comment on table metering_device_ind                     is 'ѕоказани€ прибора учета'; 
 
 comment on column metering_device_ind.id                 is 'ID ѕоказаний прибора учета';
-comment on column metering_device_ind.metering_device_id is 'показание по умолчанию (на момент установки счетчика)';
+comment on column metering_device_ind.metering_device_id is 'ID прибора учета';
 comment on column metering_device_ind.ind_begin          is 'показание на начало отчетного периода';
 comment on column metering_device_ind.ind_end            is 'показание на конец отчетного периода';
 comment on column metering_device_ind.ind_date           is 'ƒата сн€ти€ показаний';
